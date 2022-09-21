@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>result</title>
+<style>
+
+body{
+
+	background-color:AliceBlue;
+}
+
+	
+h3 {
+	color:blue;
+	text-align: center;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h2>Cyber Bullying Detection Model</h2>
+		
+	</div>
+	</header>
+	<h3><b>Result</b></h3>
+	<div class="results">
+
+
+	{% if prediction == 0%}
+	<h2 style="color:red;text-align: center;">Age</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:green;text-align: center;">Ethnicity</h2>
+	{% elif prediction == 2%}
+	<h2 style="color:green;text-align: center;">Gender</h2>
+	{% elif prediction == 3%}
+	<h2 style="color:green;text-align: center;">Not Cyberbullying</h2>
+	{% elif prediction == 4%}
+	<h2 style="color:green;text-align: center;">Other Cyberbullying</h2>
+	{% elif prediction == 5%}
+	<h2 style="color:green;text-align: center;">Religion</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
