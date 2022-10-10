@@ -6,15 +6,19 @@
 
 body{
 
-	background-color:AliceBlue;
+	background-color:Teal;
 }
 
 	
 h3 {
-	color:blue;
+	color:black;
 	text-align: center;
 }
-
+	
+h2 {
+	color:black;
+	text-align: center;
+}
 
 </style>
 
@@ -35,15 +39,15 @@ h3 {
 	{% if prediction == 0%}
 	<h2 style="color:red;text-align: center;">Age</h2>
 	{% elif prediction == 1%}
-	<h2 style="color:green;text-align: center;">Ethnicity</h2>
+	<h2 style="color:red;text-align: center;">Ethnicity</h2>
 	{% elif prediction == 2%}
-	<h2 style="color:green;text-align: center;">Gender</h2>
+	<h2 style="color:red;text-align: center;">Gender</h2>
 	{% elif prediction == 3%}
-	<h2 style="color:green;text-align: center;">Not Cyberbullying</h2>
+	<h2 style="color:Aqua;text-align: center;">Not Cyberbullying</h2>
 	{% elif prediction == 4%}
-	<h2 style="color:green;text-align: center;">Other Cyberbullying</h2>
+	<h2 style="color:red;text-align: center;">Other Cyberbullying</h2>
 	{% elif prediction == 5%}
-	<h2 style="color:green;text-align: center;">Religion</h2>
+	<h2 style="color:red;text-align: center;">Religion</h2>
 	{% endif %}
 
 	</div>

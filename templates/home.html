@@ -7,12 +7,12 @@
 
 body{
 
-	background-color:AliceBlue;
+	background-color:Teal;
 }
 
 h4 {
 	
- 	color: darkblue;
+ 	color: Light Orange;
 }
 
 input[type=submit] {
@@ -27,7 +27,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #008000;
 }
 
 </style>
@@ -41,7 +41,7 @@ input[type=submit]:hover {
 
 	<div class="ml-container">
 		<form action="{{ url_for('predict')}}" method="POST">
-		<h4><b>Enter tweet text</b></h4>
+		<h4><b>Enter Tweet Text</b></h4>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="10" cols="100"></textarea>
 		<br/>
